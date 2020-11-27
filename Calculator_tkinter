@@ -46,6 +46,8 @@ def calc(key):
     elif key == "Exit":
         root.after(1, root.destroy)
         sys.exit
+    elif key =="^2":
+        calc_entry.insert(END, "=" + str(math.pow((int(calc_entry.get())),2)))    
 
     else:
         if "=" in calc_entry.get():
