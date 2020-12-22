@@ -1,6 +1,6 @@
 import sys  # sys нужен для передачи argv в QApplication
 from PyQt5 import QtWidgets
-import design  # Это наш конвертированный файл дизайна
+import design  #   конвертируем файл дизайна
 from itertools import cycle
 
 class WindowApp(QtWidgets.QMainWindow, design.Ui_MainWindow):
@@ -28,7 +28,7 @@ def main():
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
     window = WindowApp()  # Создаём объект класса WindowApp
     window.show()  # Показываем окно
-    sys.exit(app.exec_())  # и запускаем приложение
+    sys.exit(app.exec_())  # Запускаем приложение
 
     text = 'iwanttobelieve'
     key = 'potato'
