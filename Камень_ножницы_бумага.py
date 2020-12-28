@@ -1,15 +1,14 @@
-#import libraries
 import random
 import enum
 import os
 
-#Define classes
+
 class Weapon(enum.Enum):
     камень = 1
     бумага = 2
     ножницы = 3
 
-#Define Functions
+
 def choose_weapon_player():    
     weapon_player = 0
     while weapon_player not in [1, 2, 3]:
@@ -33,7 +32,7 @@ def choose_weapon_computer():
         print('Противник выбрал ножницы!\n')                   
     return weapon_computer.value
 
-# 1 = rock, 2 = paper, 3 = scissors
+
 def compare_weapons(weapon_player, weapon_computer):
     if weapon_player == weapon_computer:
         print('Ничья!')           
